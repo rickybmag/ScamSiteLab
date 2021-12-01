@@ -1,0 +1,124 @@
+body {
+    background-color: rgb(187, 121, 207);
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #ff0a0a;
+    }
+    to {
+        text-shadow: 0 0 50px #ff0a0a;
+    }
+}
+
+@keyframes colorSwitch {
+    0% {
+        color: gold;
+        border: 40px solid darkturquoise;
+    }
+    20% {
+        color: pink;
+        border: 40px solid lawngreen;
+    }
+    40% {
+        color: dodgerblue;
+        border: 40px solid fuchsia;
+    }
+    60% {
+        color: fuchsia;
+        border: 40px solid dodgerblue;
+    }
+    80% {
+        color: lawngreen;
+        border: 40px solid pink;
+    }
+    100% {
+        color: orange;
+        border: 40px solid mediumspringgreen;
+    }
+}
+
+.centerElement {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.p {
+    font-style: italic;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
+
+.safe {
+    font-weight: bolder;
+    font-size: 50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: seagreen;
+}
+
+header {
+    background-image: url(celebrate.jpg);
+    background-size: cover;
+    font-family: cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 80px;
+    position: sticky;
+    animation-name: colorSwitch;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+h1 {
+    animation: glow .5s infinite;
+}
+
+h2 {
+    font-family: fantasy;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    color: teal;
+    text-shadow: .50vmin .50vmin 0 mediumspringgreen, -.50vmin -.50vmin 0 snow;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+h2 img {
+    animation-name: colorSwitch;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    margin: 2px;
+}
+
+a {
+    font-family: fantasy;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 30px;
+    color: blue;
+    text-shadow: .50vmin .50vmin 0 yellow, -.50vmin -.50vmin 0 gray;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.p {
+    font-style: italic;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+}
+
+form {
+    font-size: 16px;
+    font-family: "Arial Narrow Bold";
+    color: cyan;
+    border: 20px dashed indianred;
+    text-align: center;
+    height: 425;
+    width: 500;
+}
